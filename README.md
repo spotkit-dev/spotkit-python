@@ -5,7 +5,7 @@ The Unofficial Highspot Python SDK; spotkit is a Python SDK for interacting with
 ## Installation
 
 ```bash
-pip install spotkit
+pip install SpotKit
 ```
 
 ## Usage
