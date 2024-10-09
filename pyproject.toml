@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spotkit"
+version = "0.1"
+description = "A Python SDK for interacting with the Highspot API"
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "MIT" }
+authors = [
+    { name = "SpotKit.dev", email = "hello@spotkit.dev" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+homepage = "https://github.com/spotkit-dev"
+documentation = "https://github.com/spotkit-dev/docs"
+source = "https://github.com/spotkit"
+tracker = "https://github.com/spotkit/issues"
+
+[tool.hatch.metadata]
+# Optional additional metadata for Hatch
+
+[tool.hatch.build.targets.wheel]
+# Wheel-specific configuration if needed
+
+[tool.hatch.envs.docs]
+dependencies = [
+    "sphinx",
+    "sphinx-rtd-theme",
+    "sphinx-autodoc-typehints",
+]
