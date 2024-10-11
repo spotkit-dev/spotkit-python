@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class SpotKitAPI:
-    BASE_URL = "https://api.latest.highspot.com"
+    BASE_URL = "https://api.highspot.com"
     
     def __init__(self, version="v1.0", api_key: str = None, client_id=None, client_secret=None, use_basic_auth=False):
         """

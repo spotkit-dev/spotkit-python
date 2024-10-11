@@ -26,7 +26,7 @@ class TestspotkitAPI(unittest.TestCase):
         self.assertEqual(result['name'], "Test User")
         self.assertEqual(result['email'], "testuser@example.com")
         mock_get.assert_called_once_with(
-            "https://api.latest.highspot.com/v1.0/me",
+            "https://api.highspot.com/v1.0/me",
             headers={
                 'Authorization': '',
                 'Content-Type': 'application/json',
